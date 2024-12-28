@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .switch {
+      margin-left: 10px;
+    }
+    .stats {
+      margin-top: 15px;
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="status">
+    <span>Status:</span>
+    <label class="switch">
+      <input type="checkbox" id="enabledToggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+  
+  <div class="stats">
+    <h3>Impact Statistics</h3>
+    <p>Links converted: <span id="conversionCount">0</span></p>
+    <p>Selected charity: <span id="selectedCharity">Default Charity</span></p>
+  </div>
+
+  <button id="optionsBtn">Open Settings</button>
+  <script src="popup.js"></script>
+</body>
+</html>
